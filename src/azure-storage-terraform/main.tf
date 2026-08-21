@@ -3,6 +3,11 @@ resource "azurerm_resource_group" "example" {
   location = var.location
 }
 
+resource "azurerm_resource_group" "example-1" {
+  name     = var.resource_group_name
+  location = var.location
+}
+
 # Comment
 resource "azurerm_storage_account" "example" {
   name                     = var.storage_account_name
