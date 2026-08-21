@@ -4,6 +4,7 @@ resource "azurerm_resource_group" "example" {
 }
 
 # Comment
+# Comment 2
 resource "azurerm_storage_account" "example" {
   name                     = var.storage_account_name
   resource_group_name      = azurerm_resource_group.example.name
